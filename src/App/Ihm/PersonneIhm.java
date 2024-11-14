@@ -1,16 +1,18 @@
 package App.Ihm;
+
 import App.Entities.Personne;
-import java.util.Scanner;
+
 public class PersonneIhm {
-    public static Personne saisir(){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("donner votre nom");
-        String nom =sc.next();
-        System.out.println("votre num");
-        int n=sc.nextInt();
-        Personne p=new Personne(n, nom);
-        sc.close();
-        return p;
+    public static Personne saisirPersonne(){
+        System.out.println("Saisir les informations de la personne :");
+        System.out.println("Age :");
+        int age = Integer.parseInt(System.console().readLine());
+        System.out.println("Nom :");
+        String nom = System.console().readLine();
+        System.out.println("Numéro de téléphone :");
+        int numTelephone = Integer.parseInt(System.console().readLine());
+        Personne personne = new Personne(age, nom, numTelephone);
+        return personne;
     }
     
 }

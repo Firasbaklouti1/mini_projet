@@ -1,25 +1,25 @@
 package App.Entities;
 
 public class ExamenRadialoque {
-    private MedecinRadialogue mr;
+    private MedecinRadialogue medecinRadialogue;
     private SalleExamen salle;
     private String type;
     private double prix;
     private int dure;
     
-    public ExamenRadialoque(MedecinRadialogue mr, SalleExamen salle, String type,double prix,int dure) {
-        this.mr = mr;
+    public ExamenRadialoque(MedecinRadialogue medecinRadialogue, SalleExamen salle, String type,double prix,int dure) {
+        this.medecinRadialogue = medecinRadialogue;
         this.salle = salle;
         this.type = type;
         this.prix=prix;
         this.dure=dure;
     }
     
-    public MedecinRadialogue getMr() {
-        return mr;
+    public MedecinRadialogue getmedecinRadialogue() {
+        return medecinRadialogue;
     }
-    public void setMr(MedecinRadialogue mr) {
-        this.mr = mr;
+    public void setmedecinRadialogue(MedecinRadialogue medecinRadialogue) {
+        this.medecinRadialogue = medecinRadialogue;
     }
     public SalleExamen getSalle() {
         return salle;
