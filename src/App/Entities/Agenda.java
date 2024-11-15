@@ -1,10 +1,12 @@
 package App.Entities;
 
 public class Agenda {
-    Vacation [] tabVacation=new Vacation[360];
+    private Vacation[] tabVacation;
+    private int vacationCount = 0;
 
-    public Agenda(Vacation[] tabVacation) {
-        this.tabVacation = tabVacation;
+    // Default constructor with default array size
+    public Agenda() {
+        this.tabVacation = new Vacation[360];
     }
 
     public Vacation[] getTabVacation() {
@@ -13,6 +15,14 @@ public class Agenda {
 
     public void setTabVacation(Vacation[] tabVacation) {
         this.tabVacation = tabVacation;
+    }
+
+    public int getVacationCount() {
+        return vacationCount;
+    }
+
+    public void setVacationCount(int vacationCount) {
+        this.vacationCount = vacationCount;
     }
     
 }
